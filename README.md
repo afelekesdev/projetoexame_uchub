@@ -26,6 +26,7 @@ projetoexame_uchub/
 ├── main.py            # Script de entrada para testes rápidos via linha de comando (CLI)
 ├── requirements.txt   # Dependências do ambiente Python
 └── .gitignore         # Proteção contra versionamento de chaves, venv e exames locais
+```
 
 Destaques Técnicos
 Saída Estruturada Garantida (schemas.py): Utilização do Pydantic (BaseModel, Field e Literal) para forçar a resposta da IA a seguir um contrato JSON rígido, categorizando cada marcador exatamente em Normal, Atencao ou Alterado.
@@ -47,35 +48,38 @@ Interface Web: Streamlit
 
 Gerenciamento de Ambiente: python-dotenv
 
-🚀 Como Executar Localmente
+## 🚀 Como Executar Localmente
 1. Clonar o repositório
-Bash
+```text 
 git clone [https://github.com/afelekesdev/projetoexame_uchub.git](https://github.com/afelekesdev/projetoexame_uchub.git)
 cd projetoexame_uchub
+```
 
 2. Criar e ativar o ambiente virtual
+```text
 Windows (PowerShell):
-
-PowerShell
 python -m venv venv
 .\venv\Scripts\Activate.ps1
-Linux / macOS:
 
-Bash
+Linux / macOS:
 python3 -m venv venv
 source venv/bin/activate
-3. Instalar as dependências
-Bash
-pip install -r requirements.txt
-4. Configurar a chave da API
-Crie um arquivo .env na raiz do projeto e adicione sua chave da Google AI Studio:
+```
 
-Snippet de código
+3. Instalar as dependências
+
+```text 
+pip install -r requirements.txt
+```
+4. Configurar a chave da API
+```text
+Crie um arquivo .env na raiz do projeto e adicione sua chave da Google AI Studio:
 GEMINI_API_KEY=sua_chave_api_aqui
+```
 5. Executar a aplicação web
-Bash
+```texy
 streamlit run app.py
 A interface será aberta automaticamente no navegador em http://localhost:8501.
-
+```
 👤 Autor
 Desenvolvido por Alan de Lima Félix (@afelekesdev) como parte do projeto UC HUB.
